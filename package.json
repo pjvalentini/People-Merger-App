@@ -1,0 +1,15 @@
+{
+  "name": "peoplemergerapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "people1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "merge-json": "0.1.0-b.3",
+    "moment": "^2.18.1"
+  }
+}
