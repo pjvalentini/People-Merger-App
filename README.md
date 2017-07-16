@@ -10,9 +10,9 @@
 
      Below are detailed instructions for your program:
 
-     Read in a file, named "people1.jsonView in a new window", which contains a list of people.
+     Read in a file, named "people1.json, which contains a list of people.
 
-     Read in another file, named "people2.jsonView in a new window", which contains another list of people.
+     Read in another file, named "people2.json, which contains another list of people.
 
      After both of these files have been read, write a new file called "peopleComplete.txt" which contains a sorted list of all the people from the first two files.
 
@@ -22,7 +22,7 @@
 
         * Grading Criteria:
 
-            The program reads from both the"people1.jsonView in a new window" and"people2.jsonView in a new window" files.
+            The program reads from both the people1.json and people2.json files.
 
             The program writes a new file called "peopleComplete.txt" which contains all the people from the first two files.
 
