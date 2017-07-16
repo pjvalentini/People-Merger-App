@@ -16,7 +16,7 @@ function parseReadMergeSort() {
   		if (err) throw err;
   		var secondFile = JSON.parse(data2);
   		var total = firstFile.concat(secondFile);
-    	// Alphabetically sorts the items in the array, it's automagic!
+    	// Alphabetically sorts the items in the array.
   		console.log(total.sort());
 		});
 	});
