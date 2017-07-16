@@ -6,6 +6,7 @@ const file1 = require("./people1.json");
 const file2 = require("./people2.json");
 const completeFile = 'peopleComplete.txt';
 
+
 function parseReadMergeSort() {
 	fs.readFile("./people1.json", 'utf-8', function(err, data1) {
 		if (err) throw err;
@@ -15,9 +16,13 @@ function parseReadMergeSort() {
 		fs.readFile("./people2.json", 'utf-8', function(err, data2) {
   		if (err) throw err;
   		var secondFile = JSON.parse(data2);
-  		var total = firstFile.concat(secondFile);
+  		var merge = firstFile.concat(secondFile);
     	// Alphabetically sorts the items in the array.
-  		console.log(total.sort());
+  		console.log(merge.sort());
+
+			fs.writeFile('./peopleComplete.txt', 'utf-8', function(err) {
+				if (err) throw err;
+			});
 		});
 	});
 }
