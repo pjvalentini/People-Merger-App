@@ -2,18 +2,18 @@
 
 const fs = require("fs");
 
-const file1 = require("./people1.json");
-const file2 = require("./people2.json");
+const fileOne = require("./people1.json");
+const fileTwo = require("./people2.json");
 const completeFile = 'peopleComplete.txt';
 
 
-function parseReadMergeSort(file1, file2) {
-	fs.readFile(file1, 'utf-8', function(err, data1) {
+function parseReadMergeSort(fileOne, fileTwo) {
+	fs.readFile(fileOne, 'utf-8', function(err, data1) {
 		if (err) throw err;
   	// Turns the string into javascript
 		var firstFile = JSON.parse(data1);
 
-		fs.readFile(file2, 'utf-8', function(err, data2) {
+		fs.readFile(fileTwo, 'utf-8', function(err, data2) {
   		if (err) throw err;
   		var secondFile = JSON.parse(data2);
   		var merge = firstFile.concat(secondFile);
